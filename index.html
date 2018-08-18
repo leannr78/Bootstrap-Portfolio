@@ -8,91 +8,128 @@
 </head>
 
 <body>
-
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="jumbotron">
-            <h2>You just typed
-              <span id="user-text">
-                <strong>...Nothing.</strong>
-              </span>
-            </h2>
-          </div>
+    <div id="app" class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+            <a class="navbar-brand" href="#">LeAnn Roberts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+    
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/login') }}"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/register') }}">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+  <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+    <span>
+    <a class="navbar-brand" href="#">LeAnn Roberts</a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About
+            <!-- <span class="sr-only">(current)</span> 
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Contact</a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+    <!-- </div>
+  </span>
+  </nav> -->
+  <!-- <div class="d-flex flex-column flex-md-row p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <span>
+          <h5><strong>LeAnn Roberts</strong></h5>
+          <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">About</a>
+            <a class="p-2 text-dark" href="#">Portfolio</a>
+            <a class="p-2 text-dark" href="#">Contact</a>
+          </nav>
+        </span>
+          <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
+  <!-- <div class="jumbotron">
+              <h1>Navbar example</h1>
+               <!-- <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs »</a> -->
+  <!-- </div> -->-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <div class="jumbotron">
+          <h2>
+            <span id="user-text">
+              <strong>About Me</strong>
+            </span>
+          </h2>
+          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem saepe nobis eum, doloribus placeat quos possimus
+            voluptate illum distinctio perspiciatis similique eveniet veritatis odit ratione velit ducimus qui, minima at?
+          </p>
         </div>
       </div>
     </div>
-
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Page Title</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-      <!-- <script src="main.js"></script> -->
-    </head>
-
-    <body>
-      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  </div>
+  <!--   Stack the columns on mobile by making one full-width and the other half-width
       <div class="container">
         <div class="col-md-3"></div>
         <div class="col-md-3">
-          <h1>LeAnn Roberts</h1>
+          <h1>duh</h1>
         </div>
         <div class="col-md-3">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Profile
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
         </div>
         <div class="col-md-3"></div>
-
-        <div class="row">
-
-          <!-- <div class="col-md-4">blah</div> -->
-          <!-- <div class="col-md-4">blah</div> -->
-        </div>
-
         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row">
-          <div class="col-md-2">blah</div>
-          <div class="col-md-2">blah</div>
-          <div class="col-md-2">blah</div>
-          <div class="col-md-2">blah</div>
-          <div class="col-md-2">blah</div>
-          <div class="col-md-2">blah</div>
-        </div>
+  <!-- <div class="row">
+      <div class="col-md-2">blah</div>
+      <div class="col-md-2">blah</div>
+      <div class="col-md-2">blah</div>
+      <div class="col-md-2">blah</div>
+      <div class="col-md-2">blah</div>
+      <div class="col-md-2">blah</div>
+    </div> -->
 
-        <!-- Columns are always 50% wide, on mobile and desktop -->
-        <div class="row">
-          <div class="col-md-6">.col-md-6</div>
-          <div class="col-md-6">.col-md-6</div>
-        </div>
-      </div>
-    </body>
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <!-- <div class="row">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+    </div>
+  </body> -->
 
-    </html>
+</html>
